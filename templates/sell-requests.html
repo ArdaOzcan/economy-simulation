@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+
+{% block head %}
+<title>Sell Requests</title>
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+  <h2>Sell Requests</h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">ID</div>
+      <div class="col col-2">Seller</div>
+      <div class="col col-3">Item ID</div>
+      <div class="col col-4">Price</div>
+      <div class="col col-5">Amount</div>
+    </li>
+    {%for r in s_requests%}
+
+    <li class="table-row">
+      <div class="col col-1" data-label="ID">{{r.id}}</div>
+      <div class="col col-2" data-label="Seller">{{r.seller_name}}</div>
+      <div class="col col-3" data-label="Item ID">{{r.item_id}}</div>
+      <div class="col col-4" data-label="Price">{{r.price}}</div>
+      <div class="col col-5" data-label="Amount">{{r.amount}}</div>
+    </li>
+    {%endfor%}
+
+  </ul>
+</div>
+
+
+{% endblock %}

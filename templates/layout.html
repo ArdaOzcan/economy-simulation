@@ -1,0 +1,40 @@
+<!-- HTML in this page extends into every other page -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <link rel='stylesheet' type='text/css' href='/static/css/style.css'>
+
+    <nav>
+        <ul class="menu">
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/sell">Sell</a></li>
+            <li><a href="/buy">Buy</a></li>
+            <li><a href="/history">History</a></li>
+            <li><a href="/sell-requests">Sell Requests</a></li>
+            <li><a href="/charts">Charts</a></li>
+        </ul>
+      </nav>
+
+    {% block head %}
+    <title>Economy Simulation</title>
+
+    {% endblock %}
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

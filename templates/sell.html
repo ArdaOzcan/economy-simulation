@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+
+{% block head %}
+<title>Sell</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="grid align__item">
+
+    <div class="sell">
+
+        <h2>Sell</h2>
+        <form class="form" action="" method="post" name="sell">
+            <div class="form__field">
+                <input type="text" placeholder="Name" id="name" name="name"><br>
+            </div>
+            <div class="form__field">
+                <input type="number" placeholder="Item ID" id="item_id" name="item_id"><br>
+            </div>
+            <div class="form__field">
+                <input type="number" placeholder="Amount" id="amount" name="amount"><br>
+            </div>
+            <div class="form__field">
+                <input type="number" placeholder="Price per item" id="price" name="price"><br>
+            </div>
+            <div class="form__field">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</div>
+{% endblock %}

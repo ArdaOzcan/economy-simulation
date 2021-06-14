@@ -1,0 +1,4 @@
+DEBUG = True
+SECRET_KEY = 'CHANGE_THIS'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///database.db'
+
